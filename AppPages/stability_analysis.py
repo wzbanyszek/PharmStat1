@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator
+from matplotlib.offsetbox import AnchoredOffsetbox, TextArea
 from scipy.stats import linregress
 from utils.translations import translations
 
@@ -71,6 +72,8 @@ def show(language):
             ax.set_ylabel(parameter_name)
             ax.set_title(f"{t['plot']['title']}: {parameter_name}")
             ax.legend()
+            anchored_text = AnchoredOffsetbox(loc='lower center', child=TextArea(ax.get_legend().get_texts()), frameon=False)
+            ax.add_artist(anchored_text)
             ax.xaxis.set_major_locator(MultipleLocator(3))
             st.pyplot(fig)
 
