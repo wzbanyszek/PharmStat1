@@ -71,6 +71,7 @@ def show(language):
             ax.set_ylabel(parameter_name)
             ax.set_title(f"{t['plot']['title']}: {parameter_name}")
             ax.legend()
+            ax.xaxis.set_major_locator(MultipleLocator(3))
             st.pyplot(fig)
 
             st.subheader(t["regression_results"]["header"])
