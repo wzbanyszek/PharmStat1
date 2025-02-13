@@ -55,9 +55,9 @@ def show(language):
 
                     regression_results.append({
                         t["regression_results"]["series"]: col,
-                        t["regression_results"]["slope"]: round(slope, 3),
-                        t["regression_results"]["intercept"]: round(intercept, 3),
-                        t["regression_results"]["r_value"]: round(r_value, 3),
+                        t["regression_results"]["slope"]: round(slope, 6),
+                        t["regression_results"]["intercept"]: round(intercept, 6),
+                        t["regression_results"]["r_value"]: round(r_value, 6),
                         t["regression_results"]["p_value"]: f"{p_value:.3e}",
                         t["regression_results"]["std_err"]: round(std_err, 3)
                     })
