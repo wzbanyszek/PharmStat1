@@ -114,7 +114,7 @@ def show(language):
             fig, ax = plt.subplots(figsize=(12, 6))
             ax.plot(series_ids, data_array, marker='o', linestyle='-', label=t["chart_labels"]["values"])
             ax.axhline(usl, color='r', linestyle='dashed', linewidth=2, label=t["spec_limits"]["usl"])
-            ax.axhline(lsl, color='b', linestyle='dashed', linewidth=2, label=t["spec_limits"]["lsl"])
+            ax.axhline(lsl, color='r', linestyle='dashed', linewidth=2, label=t["spec_limits"]["lsl"])
             ax.set_xlabel(t["chart_labels"]["time_series"])
             ax.set_ylabel(t["chart_labels"]["values"])
             ax.set_title(t["chart_labels"]["control_chart_with_spec_limits"])
