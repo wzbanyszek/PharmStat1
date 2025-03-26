@@ -57,7 +57,7 @@ def show(language):
             plt.legend()
             st.pyplot(plt.gcf())
 
-            Cp = (USL - LSL) / (6 * np.std(data))
+            Cp = (USL - LSL) / (6 * data.std())
             Cpk = min((USL - data.mean()) / (3 * data.std()), (data.mean() - LSL) / (3 * data.std()))
 
             num_samples = len(data)
