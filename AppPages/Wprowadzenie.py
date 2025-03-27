@@ -13,12 +13,6 @@ def show(language):
     1. **{t["descriptive_statistics"]["descriptive_stats"]}**  
        {t["descriptive_statistics"]["descriptive_stats_desc"]}
 
-    #2. **{t["histogram_analysis"]["histograms"]}**  
-    #   {t["histogram_analysis"]["histograms_desc"]}
-
-    #3. **{t["boxplot_charts"]["boxplot"]}**  
-    #   {t["boxplot_charts"]["boxplot_desc"]}
-
     2. **{t["control_charts"]["control_charts"]}**  
        {t["control_charts"]["control_charts_desc"]}
 
@@ -27,9 +21,6 @@ def show(language):
 
     4. **{t["stability_regression"]["stability_regression"]}**  
        {t["stability_regression"]["stability_regression_desc"]}
-
-    #7. **{t["temp_humidity_analysis"]["temp_humidity"]}**  
-    #   {t["temp_humidity_analysis"]["temp_humidity_desc"]}
 
     ---
     **{t["general"]["how_to_use"]}**  
