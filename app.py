@@ -7,7 +7,7 @@ st.set_page_config(page_title="Santo Pharmstat", layout="wide")
 # Wybór języka
 language = st.sidebar.selectbox(
     "Wybierz język / Select Language / Выберите язык",
-    options=["Polski", "English", "Russian"],
+    options=["Polski", "English", "Русский"],
     index=0  # Ustawienie domyślnego języka (0 = Polski, 1 = English, 2 = Русский)
 )
 
