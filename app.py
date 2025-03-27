@@ -21,13 +21,13 @@ page = st.sidebar.radio(
     [
         t["general"]["intro"],
         t["descriptive_statistics"]["descriptive_stats"],
-        t["histogram_analysis"]["histograms"],
-        t["boxplot_charts"]["boxplot"],
+        #t["histogram_analysis"]["histograms"],
+        #t["boxplot_charts"]["boxplot"],
         t["control_charts"]["control_charts"],
         t["process_capability"]["process_capability"],
-        t["stability_regression"]["stability_regression"],
-        t["temp_humidity_analysis"]["temp_humidity"],
-        t["pqr_module"]["title"]  
+        t["stability_regression"]["stability_regression"]
+        #t["temp_humidity_analysis"]["temp_humidity"],
+        #t["pqr_module"]["title"]  
     ]
 )
 
