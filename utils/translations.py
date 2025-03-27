@@ -635,7 +635,7 @@ translations = {
     }
         
         },
-        "Russian": {
+        "Русский": {
             "general": {
                 "menu_title": "Меню",
                 "intro": "Добро пожаловать в приложение Santo Pharmstat!",
