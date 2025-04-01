@@ -39,9 +39,9 @@ def show(language):
             #target = st.number_input(t["spec_settings"]["target"], value=float(data.mean()))
             #LSL = st.number_input(t["spec_settings"]["lsl"], value=float(data.min()))
             #USL = st.number_input(t["spec_settings"]["usl"], value=float(data.max()))
-            target = st.number_input(t["spec_settings"]["target"], 0)
-            LSL = st.number_input(t["spec_settings"]["lsl"], 0)
-            USL = st.number_input(t["spec_settings"]["usl"], 0)
+            target = st.number_input(t["spec_settings"]["target"], value=0, format="%0.01f")
+            LSL = st.number_input(t["spec_settings"]["lsl"], value=0, format="%0.01f")
+            USL = st.number_input(t["spec_settings"]["usl"], value=0, format="%0.01f")
 
             x = np.linspace(min(data), max(data), 1000)
             y = norm.pdf(x, loc=target, scale=data.std())
