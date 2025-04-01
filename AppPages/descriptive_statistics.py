@@ -49,7 +49,7 @@ def show(language):
                     skewness = skew(data)
                     kurt = kurtosis(data)
 
-                    additional_stats.setdefault(t["statistics"]["shapiro_test"], []).append(round(p_value, 4))
+                    #additional_stats.setdefault(t["statistics"]["shapiro_test"], []).append(round(p_value, 4))
                     additional_stats.setdefault(t["statistics"]["skewness"], []).append(round(skewness, 2))
                     additional_stats.setdefault(t["statistics"]["kurtosis"], []).append(round(kurt, 2))
 
