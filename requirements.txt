@@ -2,7 +2,8 @@ streamlit
 pandas
 numpy
 matplotlib
-scipy
 openpyxl
 sixsigmaspc
 seaborn
+scipy==1.10.1
+statsmodels==0.13.5
